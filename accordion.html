@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion" id="parent">
+            <!-- Accordion item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                        Accordion Header
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="item1" data-bs-parent="#parent">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officia in quaerat
+                        distinctio
+                        atque. Ut quod eveniet dolorem aspernatur itaque? Sed labore, similique ducimus sapiente vel
+                        debitis
+                        quod molestiae praesentium.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item2">
+                        Accordion Header
+                    </button>
+                </h2>
+                <div class="accordion-collapse show" id="item2" data-bs-parent="#parent">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officia in quaerat
+                        distinctio
+                        atque. Ut quod eveniet dolorem aspernatur itaque? Sed labore, similique ducimus sapiente vel
+                        debitis
+                        quod molestiae praesentium.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
